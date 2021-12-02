@@ -1,0 +1,101 @@
+:root{
+    --cream-brulee: #3974cc;
+    --buttercup: #88f0f0;
+    --dark-ebony: #3d1f04;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.archivo{
+    background-color: var(--cream-brulee);
+    margin: 50px;
+    padding: 30px;
+    color: black;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-align: center;
+
+    font-family: 'Montserrat' , sans-serif;
+    
+}
+
+.archivo .cargarSubir{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.archivo .cargarSubir div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.archivo .cargarSubir div label{
+    font-size: 1.2em;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.archivo .cargarSubir div input{
+    margin: 20px;
+
+}
+
+.archivo .cargarSubir div .subir{
+    width: 30%;
+    height: 50px;
+}
+
+.archivo .cargar .archivoCargar{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: blueviolet;
+}
+
+.archivo form .file{
+    width: 50%;
+    margin: 10px auto;
+
+}
+
+
+.archivo .cons div input[type=number]{
+    width: 60%;
+    padding: 10px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.archivo form input[type=submit]{
+    background-color:var(--buttercup);
+    color: black;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    font-weight: bolder;
+    transition: 0.4s;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.archivo form input[type=submit]:hover{
+    background-color: #3974cc;
+}
+
+
+
+
+

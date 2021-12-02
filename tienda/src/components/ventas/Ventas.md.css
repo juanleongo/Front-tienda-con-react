@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+ul .ventas{
+	    background-color: #f5af0b70;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.contenedor{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.contenedor form .cliente{
+	width:100%;
+	display:flex;
+	padding:10px;
+	justify-content: space-around;
+	align-content: start;
+}
+
+.contenedor form .cliente div{
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 1.1em;
+}
+
+.contenedor form .cliente div input[type=number],
+.contenedor form .cliente div input[type=text]{
+	width: 100%;
+	padding:5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.contenedor form .cliente div input[type=submit]{
+	background-color:var(--buttercup);
+    color: black;
+    padding: 10px 20px;
+    margin: 15px 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.contenedor form .cliente div input[type=submit]:hover{
+	background-color: #a57a14;
+}
+
+.contenedor .productos{
+	width: 100%;
+}
+.contenedor .productosGrande{
+	width:100%;
+	display:flex;
+	padding:10px;
+	justify-content: space-around;
+	align-content: start;
+	
+}
+
+.contenedor .productosGrande .individuales{
+	border: 0.5px solid black;
+	padding: 20px;
+}
+
+
+.contenedor .productosGrande div{
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 1.1em;
+	
+}
+
+.contenedor .productosGrande div input{
+	width: 90%;
+	padding:5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px;
+  
+}
+
+.contenedor .productosGrande div input[type=submit]{
+	width:90%;
+	background-color:var(--buttercup);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+
+
+
+
+.contenedor .precios{
+	width: 100%;
+	display: flex;
+	padding: 20px;
+	justify-content: center ;
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 1.1em;
+	flex-wrap: wrap;
+}
+
+.contenedor .precios div{
+	width: 30%;
+	margin: 5px;
+}
+
+.contenedor .precios div input{
+	width: 100%;
+	padding:5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px;
+  
+}
+
+.contenedor .precios div input[type="submit"]{
+	width:80%;
+	background-color:var(--buttercup);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.boton{
+    background-color: aqua;
+}
+
+
+
+.contenedor .precios div input[type="submit"]:hover{
+	background-color: #a57a14;
+}
