@@ -9,9 +9,9 @@ export const Header = () => {
   return (
 
     <div>
-      <Navbar  expand="lg" className="cabecera"  >
+      <Navbar variant="dark"   expand="lg" className="cabecera"  >
         <Container>
-          <Navbar.Brand className="text-light" href="#home">La generica </Navbar.Brand>
+          <Navbar.Brand className="text-light" href="/sucursal">La generica </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

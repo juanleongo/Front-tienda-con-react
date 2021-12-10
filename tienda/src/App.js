@@ -13,8 +13,9 @@ import { Product } from './components/rutas/Product'
 import { Report } from './components/rutas/Report'
 import { LoginPanel } from './components/rutas/LoginPanel'
 import { Sales } from './components/rutas/Sales'
-import { Createclient } from './components/rutas/Createclient'
+import {Createclient} from './components/rutas/Createclient'
 import { ModificateClient } from './components/rutas/ModificateClient';
+import {Branch} from './components/rutas/Branch'
 
 function App() {
   return (
@@ -26,11 +27,13 @@ function App() {
           <Route path="/productos" component={Product} />
           <Route path="/reportes" component={Report} />
           <Route path="/Login" component={LoginPanel} />
-          <Route path="/ventas" component={Sales} />
-          <Route path="/crear" component={Createclient} />
+          <Route path="/ventas" component={Sales} />      
           <Route path="/editar" component={ModificateClient} />
-
+          <Route path="/sucursal" component={Branch} />
+          <Route path="/crearcliente" component={Createclient} />
+         
           <LoginPanel/>
+          <Branch/>
 
 
         </Switch>

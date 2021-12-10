@@ -1,32 +1,50 @@
-import React from 'react'
-import ("./Footer.md.css")
+import React from "react";
+import "./Footer.md.css"
 
 
 export const Footer = () => {
   return (
-    <div>
-      <footer className="pie-pagina">
-        <div className="grupo-1">
+    <>
+    <footer className="footer">
+      <div className="l-footer">
+      
+       
+      </div>
+      <ul className="r-footer">
+        <li>
+          <h2>
+            Social</h2>
+          <ul className="box">
+            <li><>Instagram</></li>
+            <li><>Facebook</></li>
+            <li><>Pinterest</></li>
+          </ul>
+        </li>
+        <li >
+          <h2>
+            Productos</h2>
+          <ul className="box">
+            <li><>Menú</></li>
+            <li><>Servicios</></li>
+            <li><>Reservas</></li>
 
-          <div className="box">
-            <h2>SOBRE NOSOTROS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
-          </div>
-          <div className="box">
-            <h2>SIGUENOS</h2>
-            <div className="red-social">
+          </ul>
+        </li>
+        <li>
+          <h2>Contacto</h2>
+          <ul className="box">
+            <li><>+57 31531696</></li>
+            <li><>salysalsa@gmail.com</></li>
 
-            </div>
-          </div>
-        </div>
-        <div className="grupo-2">
-          <small>&copy; 2021 <b>SLee Dw</b> - Todos los Derechos Reservados.</small>
-        </div>
-      </footer>
+          </ul>
+        </li>
+      </ul>
+      <div className="b-footer">
+        <p>
+          Todos los derechos revervados © - JUVENTIC 2021 </p>
+      </div>
+    </footer>
 
-
-
-    </div>
-  )
-}
+  </>
+    );
+  }
