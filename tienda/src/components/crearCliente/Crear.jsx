@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useHistory } from 'react-router';  
+
 
 import axios from 'axios';
 
 export const Crear = () => {
 
-
+    const history = useHistory()
 
     const [creacionCliente, setcreacionCliente] = useState({
         identification: '',
@@ -35,60 +37,11 @@ export const Crear = () => {
         await axios.post("http://localhost:8000/api/auth/signupBuyer", creacionCliente)
             .then(response => {
                 setData(data.concat(response.data))
+                history.push("/clientes")
             })
+            
     }
-    //     const[cedula,setCedula]=  useState(false)
-    //     const[name,setNombre]=  useState(false)
-    //     const[adress,setDireccion]=  useState(false)
-    //     const[phone,setTelefono]=  useState(false)
-    //     const[email,setCorreo]=  useState(false)
-
-    //     const valorCedula=(cedulaEnviar) =>{
-    //         if(cedulaEnviar.trim()){
-    //             setCedula(true)
-    //         }
-    //     }
-    //       const valorNombre=(nombreEnviar) =>{
-    //         if(nombreEnviar.trim()){
-    //             setNombre(true)
-    //         }
-
-    //     }
-    //     const valorDireccion=(direccionEnviar) =>{
-    //         if(direccionEnviar.trim()){
-    //             setDireccion(true)
-    //         }
-
-    //     }
-    //     const valorTelefono=(telefonoEnviar) =>{
-    //         if(telefonoEnviar.trim()){
-    //             setTelefono(true)
-    //         }
-
-    //     }
-
-    //     const valorCorreo=(correoEnviar) =>{
-    //         if(correoEnviar.trim()){
-    //             setCorreo(true)
-    //         }
-
-    //     }
-
-    //     const enviar=(e)=>{
-    //         e.preventDefault()
-
-    //         if(cedula===true &&
-    //             name===true &&
-    //             adress===true &&
-    //             phone===true &&
-    //             email===true){
-    //                 console.log("se envio")
-    //     }else{
-    //         console.log("paila perro")
-    //     }
-    //     setTimeout(()=>{window.location.reload()},5000)
-    // } 
-    // const url = "http://localhost:8000/api/auth/signupBuyer"
+    
 
     return (
         <div className="container mt-4">

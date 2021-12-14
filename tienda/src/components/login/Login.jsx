@@ -6,7 +6,7 @@ export const Login = () => {
 
 const [email,setEmail]  = useState("")
 const [password,setPassword]  = useState("")
-const history = useHistory();
+  const history = useHistory();
 
 useEffect(()=>{
   if (sessionStorage.getItem("access_token")){
